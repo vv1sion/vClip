@@ -9,5 +9,14 @@
     "iv": "P43womFAy49eM2M9",
     "data": "fpAdc7JHAB5j8wF4rVHr4KwS0eQ2Dc3Xe/N4A3tq5rAX6ur2p5LXsfXXNqnRVVMq"
   },
-  "keys": []
+  "keys": [
+    {
+      "id": "e8730dcffcf5d2e0f4e6856d9972c309",
+      "label": "Julian",
+      "created": "2026-11-23T17:27:05.297Z",
+      "salt": "LO/2ZrdjgbGAFjuXMAF0Bg==",
+      "iv": "4DpsujynH1BQj5ur",
+      "data": "rSo4oiQRT8PcVvhgfH8aitKtUMcdwJiDu5OHEdxCb6TizVs0DGoTMVZtHDs+0bwX"
+    }
+  ]
 }
