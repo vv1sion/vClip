@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "vault": {
+    "iv": "lbCTbwtJtge7uzwq",
+    "data": "6MWqblUfyvhPmxo2OkR9deugiidZZrcB9nbHXeLkxJmLMQ9h+DP8PMDfHOGVzU8bgkFkfVHhGxewpjIi/wxT+Ymk3XXbbNVr8eZ1ClSY11/NsgXYoacuwlWEnTdduj3FBq5mBXwyM85YunWE5lcdve81OpQlV7RqfvjLl7G9qQVbK4isCG9wsaVS6ZAsNFthbWQWEORiGhgeN1zeRD8="
+  },
+  "admin": {
+    "salt": "Mgm4xfK5E8uiqNNoeeUabw==",
+    "iv": "P43womFAy49eM2M9",
+    "data": "fpAdc7JHAB5j8wF4rVHr4KwS0eQ2Dc3Xe/N4A3tq5rAX6ur2p5LXsfXXNqnRVVMq"
+  },
+  "keys": []
+}
