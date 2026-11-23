@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0b0a10">
+<title>vClip: replay-buffer game clipper for Windows</title>
+<meta name="description" content="vClip keeps the last seconds of your game in memory. Press one key and the moment you just played is saved as a clip.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/VClipDisplay.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="./"><img src="img/icon.png" alt="" width="32" height="32"><span>vClip</span></a>
+  <nav aria-label="Page">
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+    <a class="top-cta" href="https://github.com/vv1sion/vClip/releases/latest/download/vClip-setup.exe">Get vClip</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Keep the last<br>30 seconds.</h1>
+    <p class="lead">vClip records your game into a rolling buffer in memory. Press one key and the moment you just played is saved as a clip. It never has to ask you to start.</p>
+    <div class="hero-actions">
+      <a class="btn primary" id="download-main" href="https://github.com/vv1sion/vClip/releases/latest/download/vClip-setup.exe">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg>
+        Download for Windows
+      </a>
+      <p class="meta"><span id="version">Latest version</span> · Windows 10 and 11 · Free</p>
+    </div>
+
+    <figure class="buffer" aria-label="How a clip is made: the last 60 seconds sit in memory, a key press saves the last 30">
+      <svg class="track" viewBox="0 0 1200 96" preserveAspectRatio="none" role="img" aria-hidden="true">
+        <defs>
+          <pattern id="ticks" width="20" height="96" patternUnits="userSpaceOnUse">
+            <path d="M10 34v28" class="tick"/>
+          </pattern>
+        </defs>
+        <rect class="ticks-fill" width="1200" height="96" fill="url(#ticks)"/>
+      </svg>
+      <div class="clip"><span>Saved as a clip</span></div>
+      <div class="playhead"><kbd>F8</kbd></div>
+      <div class="scale"><span>60 s ago</span><span>30 s ago</span><span>now</span></div>
+    </figure>
+  </section>
+
+  <section class="shot" aria-label="vClip window">
+    <img src="img/app-record.webp" width="2000" height="1322" alt="The vClip Record page showing the save button, the latest clip and recent clips">
+    <p class="caption">Demo clips in the screenshots.</p>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Made for people who play, not people who edit</h2>
+
+    <article class="feature">
+      <div class="feature-text">
+        <h3>Saving never stalls your game</h3>
+        <p>vClip captures the game window, encodes it on the GPU and keeps the video in memory already compressed. A clip is written in a background thread, so your frame rate stays where it was. On AMD cards it talks to the encoder directly, other GPUs go through ffmpeg.</p>
+        <p>It attaches to your game by itself when it starts, and sits in the tray the rest of the time.</p>
+      </div>
+      <img src="img/app-clips.webp" width="2000" height="1322" loading="lazy" alt="The vClip clips gallery with thumbnails, length and size">
+    </article>
+
+    <article class="feature flip">
+      <img src="img/app-auto.webp" width="2000" height="1322" loading="lazy" alt="The Auto clip page for Counter-Strike 2 with the kill trigger and a timeline of what a clip contains">
+      <div class="feature-text">
+        <h3>Auto clips for Counter-Strike 2</h3>
+        <p>Connect CS2 once and vClip keeps your kills by itself. Pick when it should react: any kill, two or more, three or more, or an ace. Kills less than 6 seconds apart end up in one clip, with 6 seconds before and after.</p>
+        <p>It uses Valve's own Game State Integration, so nothing is read from the game's memory.</p>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div class="feature-text">
+        <h3>Shorts and Reels in one click</h3>
+        <p>The editor trims, joins and scores your clips. Export the result as 16:9 for YouTube, or as 9:16 for Shorts, TikTok and Reels, either with a blurred background behind the whole shot or cropped to fill the screen.</p>
+      </div>
+      <div class="formats" role="img" aria-label="A 16 by 9 frame becomes a 9 by 16 frame with a blurred copy of the picture behind it">
+        <div class="frame wide"><span>16:9</span></div>
+        <svg viewBox="0 0 48 24" aria-hidden="true"><path d="M4 12h38M34 5l8 7-8 7"/></svg>
+        <div class="frame tall"><i></i><b></b><span>9:16</span></div>
+      </div>
+    </article>
+
+    <article class="feature flip">
+      <img src="img/app-upload.webp" width="2000" height="1322" loading="lazy" alt="The upload dialog with title, description and visibility">
+      <div class="feature-text">
+        <h3>Upload to YouTube without leaving the app</h3>
+        <p>Sign in with your own Google account, give the clip a title and pick private, unlisted or public. vClip only asks Google for permission to upload, nothing else, and keeps the sign-in in the Windows Credential Manager.</p>
+        <p class="note">YouTube upload needs an access key. Paste it into Settings, Accounts. Keys are issued by the developer.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="download" id="download">
+    <h2>Download vClip</h2>
+    <p class="download-lead">The installer updates vClip by itself. The MSI is for managed PCs and installs for all users, so it asks for administrator rights.</p>
+    <ul class="files">
+      <li>
+        <div><b>Installer</b><span>Recommended. Installs for your user and keeps itself up to date.</span></div>
+        <a class="btn primary" href="https://github.com/vv1sion/vClip/releases/latest/download/vClip-setup.exe">vClip-setup.exe</a>
+      </li>
+      <li>
+        <div><b>MSI, English</b><span>For all users on the PC.</span></div>
+        <a class="btn" href="https://github.com/vv1sion/vClip/releases/latest/download/vClip-en-US.msi">vClip-en-US.msi</a>
+      </li>
+      <li>
+        <div><b>MSI, Deutsch</b><span>Für alle Benutzer des PCs.</span></div>
+        <a class="btn" href="https://github.com/vv1sion/vClip/releases/latest/download/vClip-de-DE.msi">vClip-de-DE.msi</a>
+      </li>
+    </ul>
+    <h3>Before you start</h3>
+    <ul class="needs">
+      <li>Windows 10 or 11, 64 bit.</li>
+      <li>ffmpeg on your PATH. vClip uses it to write clips and for the editor.</li>
+      <li>A GPU with a hardware video encoder is best: AMD, NVIDIA or Intel.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <span>vClip by vv1sion</span>
+  <a href="https://github.com/vv1sion/vClip/releases">All releases</a>
+</footer>
+
+</body>
+</html>
