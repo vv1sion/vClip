@@ -1,11 +1,11 @@
 {
-    "version":  "0.1.12",
-    "notes":  "Notice in game, separate audio tracks with a microphone key, storage limit, share to Discord, automatic ffmpeg download, setup guide, auto clips for League of Legends and Minecraft.",
-    "pub_date":  "2026-11-23T16:33:51Z",
+    "version":  "0.1.13",
+    "notes":  "Sign-in and video links now open in your default browser instead of Windows Explorer.",
+    "pub_date":  "2026-11-23T17:42:27Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRS1dQWWNwWkc3cUEvRkdrV2dHY2Q4UGY2MVU0dDJZOUVva2lkRXBINzdPUk5PaXBNTzdrRUJYdWMrVkF4WjFGVmYyK1RYVE5RcG9oVnZmMWlyVzRnNnV1YjhyUmtPMFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUxNjEyCWZpbGU6dkNsaXBfMC4xLjEyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTIKWkl5a09CR081bUlNeGJ6VElOWGwzZ1Y4UVFqeXNsNmZsajhHY051N0hTeGFBbFMwZk8vd3ZZbnpFMUJSZ2xxcXc5YmZEZEFOb3VyV0lYdXJJZ0hUQ0E9PQo=",
-                                             "url":  "https://api.github.com/repos/vv1sion/vClip/releases/assets/783693169"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRS1dQWWNwWkc3cUxoWEQ3Rk9TVisxbWsrU0VQU1o3eW82YmlmS2NZMVAvenUwemExbHlyUlFoVmlGdVE1UXFub0lSMUcxTEFtakQ5THhFSGF6Y0JWU1VVVC9yYnBRZmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU1NzI5CWZpbGU6dkNsaXBfMC4xLjEzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTMKOFJERkJVRFgrWXpNM0tqeHp5b2c4Q2dOWmhRdnVHN05ZaUhPNHpxTVl2WW9aT3Nlc0ExUlQxL1FTbXlkUXNXRjJFR1U1Tk1Ud1lTVW16OCsrLzJkQnc9PQo=",
+                                             "url":  "https://api.github.com/repos/vv1sion/vClip/releases/assets/783926647"
                                          }
                   }
 }
