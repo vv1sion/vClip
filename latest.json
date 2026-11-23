@@ -1,11 +1,11 @@
 {
-  "version": "0.1.10",
-  "notes": "New vClip logo, MSI installer next to the EXE, plus everything from 0.1.9.",
-  "pub_date": "2026-11-23T10:50:47Z",
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRS1dQWWNwWkc3cVBJb29NaWI0a3FmdXJkaTl3ZUVCU2FmMmlRbTVOc3hNLzZlRnZ0VVRzUm5GeUV4T0I4YnV1Z05qUS81VC83TVU5dHVjK29XUkErdUk4Y3VNVU9McHdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDMwNjM4CWZpbGU6dkNsaXBfMC4xLjEwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTAKdFJuc1ZNbzBocXcxdHgwR0ZYaHpUQ01WTjdzazlIeVFBM2VVd04vRk45Uis1cjdnTTBwWjFYcy9xUEt1UFpWTExqaEhDRGJseFY0d3IxZEFmbkFuQ1E9PQo=",
-      "url": "https://api.github.com/repos/vv1sion/vClip/releases/assets/782566794"
-    }
-  }
+    "version":  "0.1.11",
+    "notes":  "YouTube upload is unlocked with an access key. Updates no longer need a token. Settings has a new Accounts section.",
+    "pub_date":  "2026-11-23T11:15:30Z",
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRS1dQWWNwWkc3cUdwNTFaSmxSaGZ5WEd4SVltd0s0eFJsTjBMQ3pia3pVRXRIUmVSZDR5UjVsTUdBUC82ek1mcjQ4K1kyYUUyOSs0TDg5QWI1ejAzSjVwQm02Q0FTVUFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDMyNTE3CWZpbGU6dkNsaXBfMC4xLjExX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTEKL0RyUTUydXp4QkRqM1lWdHMyeUY2UVpKMktYSXZhUjA5NjR6aENTdDRoaWdBUlQ5SitJT0JvWTFxQUUzM1JQcU95Sy9aQ1JnNFNUK3d2MUpBV1AxQlE9PQo=",
+                                             "url":  "https://api.github.com/repos/vv1sion/vClip/releases/assets/782635449"
+                                         }
+                  }
 }
