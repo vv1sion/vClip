@@ -187,7 +187,9 @@ function renderKeys() {
               session.notice = { kind: 'ok', text: `The key for "${entry.label}" is revoked.` }
             })
           })
-          return el('li', {}, el('div', {}, el('b', { text: entry.label }), el('span', { text: `Created ${dateText(entry.created)} · ID ${entry.id.slice(0, 8)}` })), revoke)
+          const details = `Created ${dateText(entry.created)} · ID ${entry.id.slice(0, 8)}`
+          const info = el('div', {}, el('b', { text: entry.label }), el('span', { text: details }))
+          return el('li', {}, info, revoke)
         }),
       )
     : el('p', { class: 'empty', text: 'No keys yet.' })
